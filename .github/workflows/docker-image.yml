@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t my-app:latest .       
     - name: Push an image to docker hubd     
-      run: docker push stodkar898/lenze-lab:latest
+      run: docker push stodkar898/lenze-lab myapp:latest

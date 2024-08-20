@@ -19,9 +19,9 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v3.3.0
       with:
-        username: stodkar898@gmail.com
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
         # Password or personal access token used to log against the Docker registry
-        password: Qwertyuiop@231997
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
    
     - name: Tag an image
       run: docker tag my-app:latest stodkar898/lenze-lab

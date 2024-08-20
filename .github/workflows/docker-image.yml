@@ -25,5 +25,5 @@ jobs:
    
     - name: Tag an image
       run: docker tag my-app:latest stodkar898/lenze-lab
-    - name: Push an image to docker hubd     
-      run: docker push stodkar898/lenze-lab my-app:latest
+    - name: Push an image to docker hub
+      run: docker push stodkar898/lenze-lab:latest

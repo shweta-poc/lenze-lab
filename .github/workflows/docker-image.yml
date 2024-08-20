@@ -28,7 +28,7 @@ jobs:
     - name: Push an image to docker hub
       run: docker push stodkar898/lenze-lab:latest
     - name: Run Container 
-      run: docker run -d --name my-app -p 8080:80 -e stodkar898/lenze-lab:latest
+      run: docker run -d --name my-app -p 8080:80 stodkar898/lenze-lab:latest
     - name: Run docker compose 
       run: docker-compose -f docker-compose.yaml up
       

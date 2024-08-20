@@ -28,4 +28,4 @@ jobs:
       run: docker container run -d -p 8081:8081 --name my-app stodkar898/lenze-lab:latest
       
     - name: Run Docker Compose
-      run: docker-compose -f /lenze-lab/docker-compose.yml up -d
+      run: docker-compose -f docker-compose.yml up -d .

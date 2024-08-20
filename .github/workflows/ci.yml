@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: '16'
     - name: find dir
-      run: ls
+      run: cd app
     - name: Install dependencies
       run:  npm install
     - name: Build the Docker image

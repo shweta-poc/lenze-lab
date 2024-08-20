@@ -1,4 +1,4 @@
-name: Build & Push an image to dockerhub
+name: Run containers
 
 on:
   push:

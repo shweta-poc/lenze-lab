@@ -14,6 +14,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4.0.3
+      with:
+        node-version: '16'
+    - name: find dir
+      run: ls
+    - name: Install dependencies
+      run:  npm install
     - name: Build the Docker image
       run: docker build -t my-app:latest .       
     - name: Docker Login

@@ -14,3 +14,9 @@ jobs:
 
     steps:
     
+    - name: Pull an image
+
+      run: docker pull stodkar898/lenze-lab:latest
+
+    - name: Run docker container 
+      run: docker container run -d -p 80:80 --name my-app --image stodkar898/lenze-lab:latest

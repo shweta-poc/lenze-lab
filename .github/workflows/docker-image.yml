@@ -23,6 +23,7 @@ jobs:
         # Password or personal access token used to log against the Docker registry
         password: Qwertyuiop@231997
    
-      
+    - name: Tag an image
+      run: docker tag my-app:latest stodkar898/lenze-lab
     - name: Push an image to docker hubd     
       run: docker push stodkar898/lenze-lab my-app:latest
